@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.nikdemo.demolibrary.DemoLibraryMessage;
 import com.nikdemo.introslider.R;
 
 import java.util.ArrayList;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         list.add("One 2");
         list.add("One 3");
         setUpImageViewPager(list);
+
+        DemoLibraryMessage.s(this,"Lol Message");
     }
 
     private void setUpImageViewPager(List<String> list) {
